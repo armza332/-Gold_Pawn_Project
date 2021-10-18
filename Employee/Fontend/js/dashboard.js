@@ -12,13 +12,13 @@
     type: 'line',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
+        'วันอาทิตย์',
+        'วันจันทร์',
+        'วันอังคาร',
+        'วันพุธ',
+        'วันพฤหัสบดี',
+        'วันศุกร์',
+        'วันเสาร์'
       ],
       datasets: [{
         data: [
