@@ -1,0 +1,96 @@
+
+    html,
+    body,
+    h1,
+    h2,
+    a,
+    h3,
+    h4 {
+      font-family: 'Pridi', serif;
+    }
+    .mySlides {
+      display: none;
+    }
+    .w3-tag,
+    .fa {
+      cursor: pointer;
+    }
+    .w3-tag {
+      height: 15px;
+      width: 15px;
+      padding: 0;
+      margin-top: 6px;
+    }
+    .logo {
+      font-size: 30px;
+      color: rgb(255, 255, 255) !important;
+      font-family: "Trairong", Trirong;
+      font-weight: 1000;
+    }
+    .logo:hover {
+      color: rgb(235, 230, 172) !important;
+      text-decoration: none;
+    }
+    .textcontact {
+      text-align: center;
+    }
+    .navcolor {
+      background-color: rgb(201, 0, 0);
+      border-bottom: 4px solid rgb(102, 88, 81, 0.5);
+    }
+    .nav-link {
+      color: rgb(255, 255, 255) !important;
+      font-family: Trirong;
+      font-weight: 700;
+    }
+    .nav-link:hover {
+      color: rgb(235, 230, 172) !important;
+      text-decoration: none;
+    }
+    .footerCL {
+      background-color: rgb(201, 0, 0);
+      color: white;
+    }
+    .color {
+      background-color: rgb(255, 255, 255);
+    }
+    a:link {
+      
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: gray;
+      text-decoration: none;
+    }
+
+    a:active {
+      text-decoration: none;
+      color: blue;
+    }
+    .blg:hover {
+      color: rgb(36, 36, 36) !important;
+      font-family: Trirong;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .borderrow{
+      border-style: solid;
+      border-width: 1px 1px 1px 1px;
+      border-color: rgb(61, 61, 61,0.2);
+      padding: 20px 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.17);
+      -o-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.17);
+      -ms-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.17);
+      -moz-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.17);
+      -webkit-box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.17);
+     }
+
+     
+    
