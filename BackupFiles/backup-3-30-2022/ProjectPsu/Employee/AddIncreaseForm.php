@@ -215,7 +215,7 @@ if (isset($_REQUEST['continueID'])) {
                                 <div class="col-5 ms-4">
                                     
                                         <label for="" class="form-row-inner mb-2">จำนวนดอกเบี้ยที่ชำระ :</label>
-                                        <input type="text" class="form-control mb-2" name="inc_interestpaid" ><br>
+                                        <input type="text" class="form-control mb-2" name="inc_interestpaid" value="<?php echo $interestpaid ?>" ><br>
                                         <label for="" class="form-row-inner mb-2">จำนวนเงินต้นที่ต้องการเพิ่ม :</label>
                                         <input type="text" class="form-control mb-2" name="newinc" >
                                         <br>
@@ -238,6 +238,7 @@ if (isset($_REQUEST['continueID'])) {
                                     <input type="hidden" class="input--style-2 " name="oldpf_creatat" value="<?php echo $pf_create_at; ?>">
                                     <input type="hidden" class="input--style-2 " name="old_interestpaid" value="<?php echo $rows['pf_interestpaid']; ?>">
                                     <input type="hidden" class="input--style-2 " name="current_interestpaid" value="<?php echo $rows['current_interestpaid']; ?>">
+                                    <input type="hidden" class="input--style-2 " name="current_date" value="<?php echo $date; ?>">
                                 </div>
 
                             </div>

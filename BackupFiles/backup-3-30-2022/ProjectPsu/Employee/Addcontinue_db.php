@@ -14,7 +14,7 @@
        $old_expdate = $_POST['pf_expdate'];
        $comment = $_POST['comment'];
     $pf_interestpaid = $old_interestpaid+$con_interestpaid;
-    $current_interest = $current_interestpaid+$con_interestpaid;
+    $current_interest = $old_interestpaid+$con_interestpaid;
        if (empty($con_interestpaid)) {
         $_SESSION['error'] = 'กรุณากรอกจำนวนดอกเบี้ย';
         header("location: Addcontinue.php?continueID=$id");

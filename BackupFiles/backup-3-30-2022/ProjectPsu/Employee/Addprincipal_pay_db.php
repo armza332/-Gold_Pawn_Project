@@ -17,7 +17,7 @@
        $comment = $_POST['comment'];
        $current_date = $_POST['current_date'];
     $pf_interestpaid = $old_interestpaid+$ppay_interestpaid;
-    $current_interest = $current_interestpaid-$ppay_interestpaid;
+    $current_interest = "0";
 $newprice = $pf_price-$ppayprice;
 
        if (empty($ppayprice)) {

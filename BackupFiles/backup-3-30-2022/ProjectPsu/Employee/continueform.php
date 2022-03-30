@@ -297,30 +297,8 @@ if (!isset($_SESSION['admin_login'])) {
                       <label style="padding-top: 15px;">ดอกเบี้ย : <?php echo $resultnets; ?>  บาท</label>
                     </div>
                     <div class="col-2 d-flex flex-row-reverse">
+                    <a class="btn btn-danger" href="Addcontinue.php?continueID=<?php echo $rows['id'];?> " style="color: white;" onclick="return confirmSubmit()">ทำรายการ</a>
                     
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    ทำรายการ
-                                    </button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">รายการต่อดอกเบี้ย</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ต้องการทำรายการต่อดอกเบี้ยรายการนี้ใช่หรือไม่
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
-                                            
-                                            <a class="btn btn-primary" href="Addcontinue.php?continueID=<?php echo $rows['id'];?> " style="color: white;" >ทำรายการ</a>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>  
                     </div>
 
                   </div>

@@ -15,8 +15,10 @@
        $oldpf_creatat = $_POST['oldpf_creatat'];
        $inc_expdate = $_POST['inc_expdate'];
        $comment = $_POST['comment'];
+       $current_date = $_POST['current_date'];
     $pf_interestpaid = $old_interestpaid+$inc_interestpaid;
-    $current_interest = $current_interestpaid-$ppay_interestpaid;
+    $current_interest = "0";
+    
 $newinc = $pf_price+$newprice;
        if (empty($newinc)) {
         $_SESSION['error'] = 'กรุณากรอกจำนวนดอกเบี้ย';
@@ -48,7 +50,9 @@ $newinc = $pf_price+$newprice;
         $pf2 -> bindParam(":pf_expdate",$inc_expdate);
         $pf->execute();
         $pf2->execute();
-        
+        $update = $conn->prepare("UPDATE pawnform SET pf_create_at = :pf_create_at WHERE id = $id");
+        $update -> bindParam(":pf_create_at",$current_date);
+        $update->execute();
         $_SESSION['success'] = "ทำการเพิ่มเงินต้นเรียบร้อยแล้ว";
                    header("location: AddIncreaseForm.php?continueID=$id ");
                 } else {
